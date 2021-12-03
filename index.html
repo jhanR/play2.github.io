@@ -1,0 +1,52 @@
+
+- HTML
+
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Music Player</title>
+        <link rel="stylesheet" media="screen" href="scripts.css" />
+        <link rel="stylesheet" media="screen" href="font-awesome/css/all.min.css" />
+        <link rel="stylesheet" media="screen" href="scripts.css" />
+    </head>
+    <body>
+    <div class="container">
+        <div class="player">
+            <div class="player__controls">
+        <h5 class="player__title">titulo</h5>
+      </div>
+      
+      <div class="player__album">
+        <img src="IMAGEN DE PORTADA (CUADRADA)"Album Cover" class="player__img" loading="lazy" />
+      </div>
+ 
+      <h2 class="player__artist">nombre del album</h2>
+      <h3 class="player__song">cantante/autor</h3>
+ 
+      <input type="range" value="20" min="0" class="player__level" id="range" />
+
+      <div class="audio-duration">
+        <div class="start">00:00</div>
+        <div class="end">00:00</div>
+      </div>
+ 
+      <audio class="player__audio" controls id="audio">
+        <source src="link de la musica" type="audio/mpeg" />
+      </audio>
+
+
+        <div class="player__btn player__btn--medium blue play" id="play">
+          <i class="fas fa-play play-btn"> ▶️ </i> 
+          <i class="fas fa-pause pause-btn hide">▐ ▌</i>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+    </body>
+</html>
+
